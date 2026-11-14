@@ -1,0 +1,81 @@
+{
+  "model_name": "GaussianNB",
+  "artifact_version": "1.0.0",
+  "trained_at": "2026-11-13T18:06:18.200818+00:00",
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "metrics": {
+    "cv_mean": 0.99487,
+    "cv_std": 0.00419,
+    "test_accuracy": 0.99545,
+    "test_f1_macro": 0.99544
+  },
+  "feature_ranges": {
+    "N": {
+      "min": 0.0,
+      "max": 140.0,
+      "mean": 50.5518
+    },
+    "P": {
+      "min": 5.0,
+      "max": 145.0,
+      "mean": 53.3627
+    },
+    "K": {
+      "min": 5.0,
+      "max": 205.0,
+      "mean": 48.1491
+    },
+    "temperature": {
+      "min": 8.8257,
+      "max": 43.6755,
+      "mean": 25.6162
+    },
+    "humidity": {
+      "min": 14.258,
+      "max": 99.9819,
+      "mean": 71.4818
+    },
+    "ph": {
+      "min": 3.5048,
+      "max": 9.9351,
+      "mean": 6.4695
+    },
+    "rainfall": {
+      "min": 20.2113,
+      "max": 298.5601,
+      "mean": 103.4637
+    }
+  }
+}

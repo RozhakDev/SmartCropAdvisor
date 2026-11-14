@@ -1,0 +1,52 @@
+[theme]
+font = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+headingFont = "'Plus Jakarta Sans':https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+codeFont = "'IBM Plex Mono':https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+baseFontSize = 15
+baseFontWeight = 400
+headingFontSizes = ["1.75rem", "1.35rem", "1.125rem", "1rem", "0.875rem", "0.75rem"]
+headingFontWeights = [700, 600, 600, 600, 500, 500]
+metricValueFontSize = "1.75rem"
+metricValueFontWeight = 600
+linkUnderline = false
+baseRadius = "8px"
+buttonRadius = "6px"
+showWidgetBorder = true
+showSidebarBorder = true
+
+[theme.light]
+primaryColor = "#15803D"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8FAFC"
+textColor = "#111827"
+borderColor = "#E5E7EB"
+linkColor = "#15803D"
+codeBackgroundColor = "#F3F4F6"
+codeTextColor = "#1F2937"
+dataframeBorderColor = "#E5E7EB"
+dataframeHeaderBackgroundColor = "#F8FAFC"
+
+[theme.light.sidebar]
+backgroundColor = "#F8FAFC"
+secondaryBackgroundColor = "#FFFFFF"
+borderColor = "#E5E7EB"
+
+[theme.dark]
+primaryColor = "#22C55E"
+backgroundColor = "#0F1115"
+secondaryBackgroundColor = "#181B20"
+textColor = "#F3F4F6"
+borderColor = "#272B33"
+linkColor = "#4ADE80"
+codeBackgroundColor = "#181B20"
+codeTextColor = "#E5E7EB"
+dataframeBorderColor = "#272B33"
+dataframeHeaderBackgroundColor = "#181B20"
+
+[theme.dark.sidebar]
+backgroundColor = "#14171C"
+secondaryBackgroundColor = "#1C2027"
+borderColor = "#272B33"
+
+[server]
+headless = true
