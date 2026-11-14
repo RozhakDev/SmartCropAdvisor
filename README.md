@@ -49,12 +49,12 @@ SmartCropAdvisor/
 
 Parameter eksperimen (`random_state: 42`, rasio split, jumlah fold, batas domain, dan hyperparameter model) diatur terpusat di [settings.yaml](MachineLearning/config/settings.yaml) sehingga eksperimen dapat direproduksi.
 
-### Persiapan Data ([01_DataPreparation.ipynb](MachineLearning/01_DataPreparation.ipynb))
+### Persiapan Data ([01_DataPreparation.ipynb](MachineLearning/notebooks/01_DataPreparation.ipynb))
 
 - **Integritas Dataset**: Dataset terdiri dari `2.200` baris dan `8` kolom (`7` fitur numerik + `label`), tanpa missing value atau duplikat, dengan distribusi seimbang `100` sampel per kelas.
 - **Temuan EDA**: Grafik eksplorasi memetakan distribusi tiap fitur, korelasi antarvariabel, keseimbangan kelas, serta sebaran rentang nutrisi tanah dan iklim untuk masing-masing tanaman.
 
-### Pengembangan & Evaluasi Model ([02_ModelDevelopment.ipynb](MachineLearning/02_ModelDevelopment.ipynb))
+### Pengembangan & Evaluasi Model ([02_ModelDevelopment.ipynb](MachineLearning/notebooks/02_ModelDevelopment.ipynb))
 
 - **Strategi Validasi**: Stratified `80/20` train-test split (`1.760` train / `440` test) dan Stratified 5-Fold Cross-Validation dengan `f1_macro` sebagai metrik utama serta `accuracy` sebagai metrik sekunder.
 - **Desain Pipeline**: Setiap kandidat menggabungkan `StandardScaler()` dan estimator ke dalam `sklearn.pipeline.Pipeline` agar preprocessing latih dan serving identik.
@@ -102,7 +102,7 @@ Aplikasi Streamlit ([main.py](Visualization/main.py)) memuat pipeline dan metada
    python -m pip install -r requirements.txt
    ```
 
-3. Jalankan `01_DataPreparation.ipynb` lalu `02_ModelDevelopment.ipynb` secara berurutan untuk menghasilkan artefak model dan grafik evaluasi.
+3. Jalankan `notebooks/01_DataPreparation.ipynb` lalu `notebooks/02_ModelDevelopment.ipynb` secara berurutan untuk menghasilkan artefak model dan grafik evaluasi.
 
 ### Visualization
 
